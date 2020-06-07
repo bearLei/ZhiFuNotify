@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/login_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_merchant_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/et_login_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_login_white_radius"
+                    android:drawableLeft="@drawable/ic_login_account"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    android:hint="请输入账号"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="#333333FF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="17dp" />
+
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_login_white_radius"
+                    android:drawableLeft="@drawable/ic_login_password"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="#333333FF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="17dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_authorization_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="60dp"
+                    android:text="授权码登录"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+
+                <EditText
+                    android:id="@+id/et_login_authorization"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_login_white_radius"
+                    android:drawableLeft="@drawable/ic_login_account"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    android:hint="请输入授权码"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="#333333FF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv_change_merchant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:text=">>切换码商登录"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_login_submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_login_blue_radius"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/change_setting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="修改配置"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:background="@drawable/bg_login_blue_radius"
+                android:layout_margin="20dp"
+                android:layout_marginTop="40dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
